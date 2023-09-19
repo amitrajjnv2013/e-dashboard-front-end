@@ -24,7 +24,14 @@ const AddProduct = () => {
             }
         });
         result = await result.json();
-        console.warn(result)
+        if(result){
+            alert('product added to store')
+            setCategory('')
+            setCompnay('')
+            setName('')
+            setPrice('')
+        }
+         
 
     }
 
